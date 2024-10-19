@@ -3,7 +3,7 @@
 void	ft_putnbr(int i)
 {
 	if (i > 9)
-		ft_putnbr(i / 10);
+		write(1, &"0123456789"[i / 10], 1);
 	write(1, &"0123456789"[i % 10], 1);
 }
 
